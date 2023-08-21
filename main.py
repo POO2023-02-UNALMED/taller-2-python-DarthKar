@@ -18,14 +18,14 @@ class Motor:
         if tipo == "electrico" or tipo == "gasolina":
             self.tipo = tipo
 class Auto:
+    cantidadCreados = 0
     def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
         self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
         self.marca = marca
         self.motor = motor
-        self.registro = registro
-        self.cantidadCreados = cantidadCreados
+        self.registro = registro  
     def cantidadAsientos(self):
         nAsientos=0
         for i in range(self.asientos.length):
