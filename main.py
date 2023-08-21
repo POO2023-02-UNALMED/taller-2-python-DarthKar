@@ -26,6 +26,7 @@ class Auto:
         self.marca = marca
         self.motor = motor
         self.registro = registro  
+        self.cantidadCreados = cantidadCreados
     def cantidadAsientos(self):
         nAsientos=0
         for i in range(self.asientos.length):
